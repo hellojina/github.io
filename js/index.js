@@ -131,3 +131,14 @@ $(window).resize(function() {
 		}
 	  });
 	});
+
+$(".click_img").click(function(){
+   $(".popup").show();
+    $.get('inner_timer.html', function(data){
+        $(".popup").html(data);
+    })
+});
+
+$(".popup").click(function(){
+    $(".popup").hide();
+});
