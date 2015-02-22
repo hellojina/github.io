@@ -133,12 +133,13 @@ $(window).resize(function() {
 	});
 
 $(".click_img").click(function(){
-   $(".popup").show();
-    $.get('inner_timer.html', function(data){
-        $(".popup").html(data);
-    })
+   $(".popup").fadeIn();
 });
 
 $(".popup").click(function(){
-    $(".popup").hide();
+    $(".popup").fadeOut();
 });
+
+var hidePopup = function () {
+    $(".popup").fadeOut();
+}
