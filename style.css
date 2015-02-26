@@ -21,11 +21,12 @@ strong{font-weight:300}
     background-color: rgba(50,50,50,0.98);
     width: 300px;
     height: 100%;
-    position: fixed;
     top:0;
     right:0;
     text-align: center;
     display: none;
+    position: absolute;
+    z-index: 2;
 }
 
 .navi ul{
@@ -51,8 +52,6 @@ strong{font-weight:300}
     margin-bottom: 90px;
 }
 
-.navi_toggle:before {
-}
 
 .navi_toggle:focus .navi {
     display: block;
@@ -63,7 +62,6 @@ strong{font-weight:300}
     z-index: 2;
     display: none;
 }
-
 
 a.navi_toggle{
     position:fixed;
@@ -258,9 +256,6 @@ textarea {
 	border-radius: 0px;
 	-webkit-appearance: none;
 }
-
-.button
-
 
 
 
