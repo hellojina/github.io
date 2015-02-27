@@ -58,23 +58,14 @@ body {
     padding: 3px;
 }
 
-.topimg{
-    margin-top: 45px;
-    margin-bottom: 70px;
-    text-align: center;
-}
 
 .content {
     margin: 0 auto;
     text-align: center;
     font-size: 0;
-}
-
-.content2 {
-    margin-bottom: 120px;
+    margin-top: 45px;
 }
 
 .content img {
-    padding: 40px;
+    padding: 50px;
 }
-
