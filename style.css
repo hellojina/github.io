@@ -216,11 +216,17 @@ a.navi_toggle_active:before{
     margin-bottom: 50px;
 }
 
+.ex_title {
+    margin: 0 auto;
+    display: block;
+}
+
 .ex_table p {
     margin-top: 35px;
     margin-bottom: 120px;
     color: #999;
     font-size: 17pt;
+    line-height: 130%;
 }
 
 .ex_table span {
