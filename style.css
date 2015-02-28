@@ -120,7 +120,7 @@ strong {
 
 a.navi_toggle {
     position: fixed;
-    top: 80px;
+    top: 75px;
     right: 80px;
     display: block;
     width: 40px;
@@ -132,7 +132,7 @@ a.navi_toggle {
 
 a.navi_toggle_changed {
     position: fixed;
-    top: 80px;
+    top: 75px;
     right: 80px;
     display: block;
     width: 40px;
@@ -144,7 +144,7 @@ a.navi_toggle_changed {
 
 a.navi_toggle_changed:after {
     position: fixed;
-    top: 90px;
+    top: 85px;
     right: 80px;
     display: block;
     content: "";
@@ -155,7 +155,7 @@ a.navi_toggle_changed:after {
 
 a.navi_toggle_changed:before {
     position: fixed;
-    top: 100px;
+    top: 95px;
     right: 80px;
     display: block;
     content: "";
@@ -169,14 +169,14 @@ a.navi_toggle_changed_active {
 }
 
 a.navi_toggle_changed_active:after {
-    top: 95px;
+    top: 90px;
     border-bottom: 3px solid #fff;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
 a.navi_toggle_changed_active:before {
-    top: 95px;
+    top: 90px;
     border-bottom: 3px solid #fff;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
@@ -184,7 +184,7 @@ a.navi_toggle_changed_active:before {
 
 a.navi_toggle:after {
     position: fixed;
-    top: 90px;
+    top: 85px;
     right: 80px;
     display: block;
     content: "";
@@ -195,7 +195,7 @@ a.navi_toggle:after {
 
 a.navi_toggle:before {
     position: fixed;
-    top: 100px;
+    top: 95px;
     right: 80px;
     display: block;
     content: "";
@@ -209,13 +209,13 @@ a.navi_toggle_active {
 }
 
 a.navi_toggle_active:after {
-    top: 95px;
+    top: 90px;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
 a.navi_toggle_active:before {
-    top: 95px;
+    top: 90px;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
@@ -313,7 +313,7 @@ a.navi_toggle_active:before {
     margin-bottom: 100px;
 }
 
-.pf1, .pf2, .ex {
+.contents1, .contents2, .ex {
     margin: 0 auto;
     font-size: 0;
     width: 1419px;
@@ -340,60 +340,63 @@ a.navi_toggle_active:before {
 }
 
 .graphic img {
-    width: 80%;
-    margin: 30px 0 0 90px;
+    height: 60%;
+    padding-bottom:1000px;
+    margin: 50px 30px 0 90px;
 }
 
-.portfolio > p {
-    margin-left: 90px;
-    font-size: 20px;
-    color: #777;
-    margin-bottom: 40px;
-}
-
-.pf1 img, .pf2 img, {
+.contents1 img, .contents2 img, {
     float: left;
     width: 473px
 }
 
-.pf1 > div:nth-child(2), .pf1 > div:nth-child(6),
-.pf2 > div:nth-child(1), .pf2 > div:nth-child(4) {
+.contents1 > div:nth-child(2), .contents1 > div:nth-child(6),
+.contents2 > div:nth-child(1), .contents2 > div:nth-child(4) {
     width: 946px
 }
 
-.pf1, .pf2 {
+.contents1, .contents2 {
     margin-bottom: 120px;
+}
+
+.subtitle {
+    width: 1419px;
+    text-align: left;
+    font-size: 15pt;
+    margin: 0 auto;
+    color: #777;
+    margin-bottom: 40px;
 }
 
 .hoverimg {
     position: relative;
     width: 473px;
+    height: 430px;
     float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hoverimg .pf_text {
     position: absolute;
     visibility: hidden;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(248, 108, 89, 0.95);
 }
 
 .hoverimg:hover .pf_text {
     visibility: visible;
 }
 
-.pf_text {
-    text-align: center;
-    color: #fff;
-    width: 473px;
-    background-color: rgba(248, 108, 89, 0.95);
-}
 
 .pf_text > p {
-    margin-top: 130px;
+    margin-top: 150px;
     margin-bottom: 20px;
     color: #fff;
     font-size: 20pt;
@@ -492,7 +495,7 @@ a.navi_toggle_active:before {
     font-size: 50pt;
     color: #000000;
     text-align: center;
-    line-height: 130%;
+    line-height: 150%;
     margin-top: 100px;
 }
 
@@ -501,6 +504,22 @@ a.navi_toggle_active:before {
     margin: 0 auto;
     margin-top: 50px;
 }
+
+.hovericon .iconover {
+    visibility: hidden;
+    position: absolute;
+    left:100px;
+    top:0px;
+    z-index: 3;
+}
+
+.hovericon:hover .iconover {
+    visibility: visible;
+}
+.hoverimg2{
+    z-index: 2;
+}
+
 
 .popup {
     display: none;
