@@ -1,7 +1,7 @@
 $(document).ready(function () {
     skrollr.init();
 
-    $(".scroll").click(function (event) {        
+    $(".scroll").click(function (event) {
         event.preventDefault();
         $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
     });
@@ -12,33 +12,54 @@ $(".scrollTop").click(function () {
         scrollTop: 0
     }, 500);
 });
+var naviToggleClsName = "navi_toggle_active";
 
 <!-- NAVIGATION TOGGLE -->
 $("#navigation_box ul li").click(function () {
+
     $("#whiteout").delay(500).fadeOut(300),
         $("#navigation_box").stop().delay(500).animate({right: '-400px'}, 250).fadeOut(300),
-        $("#navi_toggle").delay(500).removeClass("navi_toggle_active");
+        $("#navi_toggle").delay(500).removeClass(naviToggleClsName);
+        //$("#navi_toggle").delay(500).removeClass("navi_toggle_active");
 });
 
 $("#whiteout").click(function () {
+    console.log("whiteout");
     $("#whiteout").fadeOut(300),
-        $("#navi_toggle").removeClass("navi_toggle_active"),
+        //$("#navi_toggle").removeClass("navi_toggle_active"),
+        $("#navi_toggle").removeClass(naviToggleClsName),
         $("#navigation_box").stop().animate({right: '-400px'}, 250).fadeOut(300);
 });
 
+
 $("#navi_toggle").click(function () {
-    if ($("#navi_toggle").hasClass("navi_toggle_active")) {
+    if ( $document.scrollTop() >= 67 ) {
+        naviToggleClsName = "navi_toggle_changed_active";
+    } else {
+        naviToggleClsName = "navi_toggle_active";
+    }
+
+    //if ($("#navi_toggle").hasClass("navi_toggle_active")) {
+    //    $("#navigation_box").stop().animate({right: '-400px'}, 250).fadeOut(300),
+    //        $("#whiteout").fadeOut(300);
+    //} else {
+    //    $("#whiteout").fadeIn(300),
+    //        $("#navigation_box").stop().fadeIn(0).animate({right: '0px'}, 250);
+    //}
+    if ($("#navi_toggle").hasClass(naviToggleClsName)) {
         $("#navigation_box").stop().animate({right: '-400px'}, 250).fadeOut(300),
             $("#whiteout").fadeOut(300);
     } else {
         $("#whiteout").fadeIn(300),
             $("#navigation_box").stop().fadeIn(0).animate({right: '0px'}, 250);
+
     }
 });
 
 document.querySelector("#navi_toggle")
     .addEventListener("click", function () {
-        this.classList.toggle("navi_toggle_active");
+        //this.classList.toggle("navi_toggle_active");
+        this.classList.toggle(naviToggleClsName);
     });
 
 <!-- BURGER MENU TOGGLE -->
@@ -47,6 +68,18 @@ var $document = $(document),
     windowWidth = $(window).width();
 
 $document.scroll(function () {
+
+    //console.log("scrolled : " + $document.scrollTop() );
+
+
+    if ($document.scrollTop() >= 67) {
+        // Change right-top menu color
+        $(".navi_toggle").removeClass("navi_toggle").addClass("navi_toggle_changed");
+
+    } else {
+        $(".navi_toggle_changed").removeClass("navi_toggle_changed").addClass("navi_toggle");
+    }
+
     if ($document.scrollTop() >= (windowHeight * 0.8)) {
         // user scrolled 50 pixels or more;
         // do stuff

@@ -1,48 +1,107 @@
 /*html5 reset*/
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong,sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header,hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font: inherit;vertical-align: baseline}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display: block}
-html,body{-webkit-text-size-adjust:none}
-body{ font:400 12px "Muli", Arial, san-serif;line-height:1}
-ol, ul, dl{list-style:none}
-blockquote, q{quotes: none}
-blockquote:before, blockquote:after,q:before, q:after{content:'';content: none}
-table,th,td{border-spacing:0;border-collapse:collapse}
-h1, h2, h3, h4, h5, h6{font-size:1em}
-input, textarea {font-size:1em}
-a:link, a:visited, a:hover, a:active {color:inherit;font-size:1em;text-decoration:none}
-img {margin:0;padding:0;border:0}
-strong{font-weight:300}
-.clearfix:after{display:block;height: 0;content:".";clear: both;visibility: hidden}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+html, body {
+    -webkit-text-size-adjust: none;
+    width: 100%;
+    height: 100% !important;
+}
+
+body {
+    font: 400 12px "Muli", Arial, san-serif;
+    line-height: 1
+}
+
+ol, ul, dl {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+table, th, td {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em
+}
+
+input, textarea {
+    font-size: 1em
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    font-size: 1em;
+    text-decoration: none
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+strong {
+    font-weight: 300
+}
+
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: ".";
+    clear: both;
+    visibility: hidden
+}
 
 .navi {
-    background-color: rgba(50,50,50,0.98);
+    background-color: rgba(50, 50, 50, 0.98);
     width: 300px;
     height: 100%;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     text-align: center;
     display: none;
     position: fixed;
     z-index: 2;
 }
 
-.navi ul{
+.navi ul {
     color: #fff;
     font-size: 24pt;
     margin-top: 320px;
 }
 
-.navi li{
+.navi li {
     padding: 10px;
 }
 
-.navi p{
+.navi p {
     color: #e1e1e0;
     font-size: 22pt;
     margin-top: 100px
 }
 
-.navi p span{
+.navi p span {
     color: #878685;
     font-size: 16pt;
     margin-bottom: 90px;
@@ -59,29 +118,82 @@ strong{font-weight:300}
     display: none;
 }
 
-a.navi_toggle{
-    position:fixed;
-    top:80px;
-    right:80px;
-    display:block;
-    width:40px;
-    height:30px;
-    border-bottom:3px solid #fff;
-    transition: all 0.5s ease;
-    z-index:3;
-}
-a.navi_toggle:after{
-    position:fixed;
-    top:90px;
-    right:80px;
+a.navi_toggle {
+    position: fixed;
+    top: 80px;
+    right: 80px;
     display: block;
-    content:"";
-    width:40px;
-    border-bottom:3px solid #fff;
-    transition:all 0.5s ease
+    width: 40px;
+    height: 30px;
+    border-bottom: 3px solid #fff;
+    transition: all 0.5s ease;
+    z-index: 3;
 }
 
-a.navi_toggle:before{
+a.navi_toggle_changed {
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    display: block;
+    width: 40px;
+    height: 30px;
+    border-bottom: 3px solid #000;
+    transition: all 0.5s ease;
+    z-index: 3;
+}
+
+a.navi_toggle_changed:after {
+    position: fixed;
+    top: 90px;
+    right: 80px;
+    display: block;
+    content: "";
+    width: 40px;
+    border-bottom: 3px solid #000;
+    transition: all 0.5s ease
+}
+
+a.navi_toggle_changed:before {
+    position: fixed;
+    top: 100px;
+    right: 80px;
+    display: block;
+    content: "";
+    width: 40px;
+    border-bottom: 3px solid #000;
+    transition: all 0.5s ease;
+}
+
+a.navi_toggle_changed_active {
+    border-bottom: 0px solid #fff;
+}
+
+a.navi_toggle_changed_active:after {
+    top: 95px;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+a.navi_toggle_changed_active:before {
+    top: 95px;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+a.navi_toggle:after {
+    position: fixed;
+    top: 90px;
+    right: 80px;
+    display: block;
+    content: "";
+    width: 40px;
+    border-bottom: 3px solid #fff;
+    transition: all 0.5s ease
+}
+
+a.navi_toggle:before {
     position: fixed;
     top: 100px;
     right: 80px;
@@ -92,18 +204,17 @@ a.navi_toggle:before{
     transition: all 0.5s ease;
 }
 
-
-a.navi_toggle_active{
+a.navi_toggle_active {
     border-bottom: 0px solid #fff;
 }
 
-a.navi_toggle_active:after{
+a.navi_toggle_active:after {
     top: 95px;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
-a.navi_toggle_active:before{
+a.navi_toggle_active:before {
     top: 95px;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
@@ -129,7 +240,7 @@ a.navi_toggle_active:before{
 
 #slides {
     width: 700%;
-    height: 700%;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -140,7 +251,7 @@ a.navi_toggle_active:before{
     top: 0;
     left: 0;
     width: 15%;
-    height: 15%;
+    height: 100%;
 }
 
 #slide-helper {
@@ -157,7 +268,7 @@ a.navi_toggle_active:before{
 }
 
 #slide-1 {
-    
+
 }
 
 #slide-2 {
@@ -166,7 +277,7 @@ a.navi_toggle_active:before{
     transform: translate(100%, 0%);
 }
 
-#slide-3 {    
+#slide-3 {
     -webkit-transform: translate(200%, 0%);
     -ms-transform: translate(200%, 0%);
     transform: translate(200%, 0%);
@@ -208,9 +319,8 @@ a.navi_toggle_active:before{
     width: 1419px;
 }
 
-
 .main {
-    height: 1100px;
+    height: 100%;
     background: -webkit-linear-gradient(#f86956, #ff853b);
     margin: 0;
     padding: 0;
@@ -221,11 +331,20 @@ a.navi_toggle_active:before{
     margin-left: 90px;
 }
 
+#slide-1 > img {
+    width: 35%;
+}
+
 .graphic {
     text-align: center;
 }
 
-.portfolio p {
+.graphic img {
+    width: 80%;
+    margin: 30px 0 0 90px;
+}
+
+.portfolio > p {
     margin-left: 90px;
     font-size: 20px;
     color: #777;
@@ -237,7 +356,8 @@ a.navi_toggle_active:before{
     width: 473px
 }
 
-.pf1 img:nth-child(2), .pf1 img:nth-child(6), .pf2 img:nth-child(1), .pf2 img:nth-child(4){
+.pf1 > div:nth-child(2), .pf1 > div:nth-child(6),
+.pf2 > div:nth-child(1), .pf2 > div:nth-child(4) {
     width: 946px
 }
 
@@ -250,16 +370,48 @@ a.navi_toggle_active:before{
     width: 473px;
     float: left;
 }
+
 .hoverimg .pf_text {
     position: absolute;
-    text-align: center;
     visibility: hidden;
     top: 0;
     left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .hoverimg:hover .pf_text {
-    visibility:visible;
+    visibility: visible;
+}
+
+.pf_text {
+    text-align: center;
+    color: #fff;
+    width: 473px;
+    background-color: rgba(248, 108, 89, 0.95);
+}
+
+.pf_text > p {
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20pt;
+}
+
+.pf_text > span {
+    font-size: 12pt;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.pf_text > div {
+    width: 25px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .about {
@@ -273,7 +425,7 @@ a.navi_toggle_active:before{
     text-align: center;
 }
 
-.about p{
+.about p {
     color: #000;
     font-size: 35pt;
     line-height: 130%;
@@ -281,7 +433,7 @@ a.navi_toggle_active:before{
     margin-bottom: 12px;
 }
 
-.about span{
+.about span {
     color: #888;
     font-size: 18pt;
     line-height: 155%;
@@ -365,4 +517,4 @@ a.navi_toggle_active:before{
     height: 100%;
     padding: 0;
     margin: 0;
- }
+}
