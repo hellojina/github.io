@@ -157,6 +157,13 @@ $(".click_img").click(function (event) {
 });
 
 
+function closePopup() {
+    $(".popup").fadeOut();
+}
+
+
+
+
 var hidePopup = function () {
     $(".popup").fadeOut();
 };
