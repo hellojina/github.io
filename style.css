@@ -246,7 +246,7 @@ a.navi_toggle_active:before{
 }
 
 .contact p {
-    font-size: 52pt;
+    font-size: 50pt;
     color: #000000;
     text-align: center;
     line-height: 130%;
@@ -254,7 +254,7 @@ a.navi_toggle_active:before{
 }
 
 .contact_way img {
-    padding: 18px;
+    padding: 15px;
     margin: 0 auto;
     margin-top: 50px;
 }
