@@ -172,6 +172,18 @@ a.navi_toggle_active:before{
     margin-bottom: 120px;
 }
 
+.hoverimg .pf_text {
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+}
+
+.hoverimg:hover .pf_text {
+    visibility:visible;
+}
+
+
+
 .about {
     background-color: #fafafa;
     margin: 0 auto;
