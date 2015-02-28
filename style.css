@@ -22,7 +22,7 @@ strong{font-weight:300}
     right:0;
     text-align: center;
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 2;
 }
 
@@ -54,7 +54,7 @@ strong{font-weight:300}
 }
 
 .navi {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     display: none;
 }
@@ -245,10 +245,17 @@ a.navi_toggle_active:before{
     margin-bottom: 120px;
 }
 
-.hoverimg .pf_text {
+.hoverimg {
     position: relative;
+    width: 473px;
+    float: left;
+}
+.hoverimg .pf_text {
+    position: absolute;
     text-align: center;
     visibility: hidden;
+    top: 0;
+    left: 0;
 }
 
 .hoverimg:hover .pf_text {
