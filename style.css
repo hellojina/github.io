@@ -445,6 +445,7 @@ a.navi_toggle_active:before {
 }
 
 .ex_table {
+    border-radius: 2px;
     width: 430px;
     height: 580px;
     text-align: center;
@@ -464,16 +465,16 @@ a.navi_toggle_active:before {
 }
 
 .ex_table p {
-    margin-top: 35px;
+    margin-top: 15px;
     margin-bottom: 120px;
     color: #999;
-    font-size: 17pt;
-    line-height: 130%;
+    font-size: 13pt;
+    line-height: 160%;
 }
 
 .ex_table span {
     color: #b0b0b0;
-    font-size: 17pt
+    font-size: 12pt
 }
 
 .contact {
