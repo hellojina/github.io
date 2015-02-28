@@ -183,7 +183,7 @@ a.navi_toggle_changed_active:before{
     margin: 0 auto;
     color: #777;
     margin-bottom: 40px;
-}
++}
 
 .contents1, .contents2 {
     margin: 0 auto;
@@ -432,56 +432,4 @@ a.navi_toggle_changed_active:before{
 .popup_content img {
     padding: 50px;
 }
-
-
-@media (max-width:720px)
-    .navi {
-        background-color: rgba(50,50,50,0.98);
-        width: 100%;
-        height: 100%;
-        top:0;
-        right:0;
-        text-align: center;
-        display: none;
-        position: fixed;
-        z-index: 2;
-    }
-
-    .navi ul{
-        font-size: 40pt;
-        margin-top: 320px;
-    }
-
-    .navi li{
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    .navi p{
-        font-size: 22pt;
-        margin-top: 100px;
-    }
-
-    .navi p span{
-        font-size: 24pt;
-        margin-bottom: 90px;
-    }
-
-    .title {
-        margin: 0 auto;
-    }
-
-    .subtitle {
-        width: 100%px;
-        text-align: center;
-        font-size: 24pt;
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
-
-    .contents1, .contents2 {
-        margin: 15px;
-        width: 100%;
-    }
-
 
