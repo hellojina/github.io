@@ -24,7 +24,7 @@ strong{font-weight:300}
     text-align: center;
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 6;
 }
 
 .navi ul{
@@ -40,19 +40,19 @@ strong{font-weight:300}
 
 .navi p{
     color: #e1e1e0;
-    font-size: 22pt;
+    font-size: 19pt;
     margin-top: 100px;
 }
 
-.navi p span{
+.navi span{
     color: #878685;
-    font-size: 16pt;
+    font-size: 13pt;
     margin-bottom: 90px;
 }
 
 .navi_toggle:focus .navi {
     display: block;
-    z-index: 3;
+    z-index: 100;
 }
 
 a.navi_toggle{
@@ -64,7 +64,7 @@ a.navi_toggle{
     height:30px;
     border-bottom:3px solid #fff;
     transition: all 0.5s ease;
-    z-index:3;
+    z-index:100;
 }
 a.navi_toggle:after{
     position:fixed;
@@ -114,7 +114,7 @@ a.navi_toggle_changed{
     height:30px;
     border-bottom:3px solid #000;
     transition: all 0.5s ease;
-    z-index:3;
+    z-index:100;
 }
 
 a.navi_toggle_changed:after{
@@ -164,7 +164,7 @@ a.navi_toggle_changed_active:before{
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 1;
+    z-index: 5;
     background: rgba(248, 108, 89, 0.85);
     display: none;
     cursor: pointer;
@@ -192,20 +192,23 @@ a.navi_toggle_changed_active:before{
 }
 
 .main {
-    height: 1100px;
+    height: 770px;
     background: -webkit-linear-gradient(#f86956, #ff853b);
     margin: 0;
     padding: 0;
 }
 
-.main img {
-    margin-top: 80px;
-    margin-left: 90px;
+.main > img {
+    margin-top: 70px;
+    margin-left: 55px;
+    position: absolute;
+    z-index: 2;
 }
 
 .graphic {
-    width: 80%;
-    margin: 30px 0 0 120px;
+    left: 30%;
+    position: absolute;
+    z-index: 1;
 }
 
 
