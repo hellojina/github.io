@@ -174,7 +174,7 @@ a.navi_toggle_changed_active:before{
     width: 1419px;
     text-align: left;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .subtitle {
@@ -184,6 +184,7 @@ a.navi_toggle_changed_active:before{
     margin: 0 auto;
     color: #777;
     margin-bottom: 40px;
+    margin-top: 100px;
 +}
 
 .contents1, .contents2 {
@@ -199,9 +200,11 @@ a.navi_toggle_changed_active:before{
     padding: 0;
 }
 
-.main img {
-    margin-top: 87px;
-    margin-left: 90px;
+.main_title {
+    width: 1419px;
+    padding-top: 87px;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .contents1 > div, .contents2 > div {
@@ -252,7 +255,8 @@ a.navi_toggle_changed_active:before{
 }
 
 .portfolio {
-    padding-top: 110px;
+    padding-top: 140px;
+    padding-bottom: 50px;
 }
 
 .pf_text > p {
@@ -280,8 +284,8 @@ a.navi_toggle_changed_active:before{
 
 #about {
     margin: 0 auto;
-    padding-top: 110px;
-    height: 1150px;
+    padding-top: 140px;
+    height: 1050px;
     background-color: #fbfbfb;
 }
 
@@ -292,7 +296,7 @@ a.navi_toggle_changed_active:before{
 #about p {
     color: #000;
     font-size: 45pt;
-    line-height: 130%;
+    line-height: 120%;
     margin-top: 40px;
     margin-bottom: 12px;
 }
@@ -301,19 +305,17 @@ a.navi_toggle_changed_active:before{
     color: #888;
     font-size: 18pt;
     line-height: 155%;
-
 }
 
 .travel {
     width: 100%;
-    height: 2200px;
-    padding-top: 110px;
+    height: 2170px;
+    padding-top: 140px;
 }
 
 .photos {
     margin: 0 auto;
     width: 1419px;
-    /*width: 80%;*/
     max-width: 1419px;
 }
 
@@ -360,8 +362,8 @@ a.navi_toggle_changed_active:before{
 
 #contact {
     background-color: #fbfbfb;
-    height: 1000px;
-    padding-top: 110px;
+    height: 960px;
+    padding-top: 140px;
 }
 
 #contact p {
@@ -421,7 +423,7 @@ a.navi_toggle_changed_active:before{
 
 .popup {
     display: none;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(247, 247, 247, 0.95);
     top: 0;
     left: 0;
     bottom: 0;
@@ -457,36 +459,44 @@ a.navi_toggle_changed_active:before{
 .close {
     position: fixed;
     top: 90px;
-    right: 90px;
+    right: 80px;
     cursor: pointer;
 }
 
 .previous {
     position: fixed;
-    bottom: 60px;
-    left: 100px;
+    top: 50%;
+    left: 80px;
 }
 
 .next {
     position: fixed;
-    bottom: 60px;
-    right: 100px;
-}
-
-.previous span, .next span {
-    padding: 3px;
+    top: 50%;
+    right: 80px;
 }
 
 .popup_content {
     margin: 0 auto;
     text-align: center;
     font-size: 0;
-    margin-top: 45px;
 }
 
 .popup_content img {
     padding: 50px;
 }
+
+.popup_content02 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popup_content02 img {
+    text-align: center;
+    margin: 0;
+
+}
+
+
 
 .popup_container {
     width:100%;
@@ -514,6 +524,24 @@ a.navi_toggle_changed_active:before{
 
 @media (max-width: 1419px) {
 
+    .title, .subtitle {
+        margin-left: 50px;
+    }
+
+
+    .contents1, .contents2 {
+        width: 100%;
+    }
+
+    .hoverimg {
+        width: 33%
+    }
+
+    .contents1 > div:nth-child(2), .contents1 > div:nth-child(6),
+    .contents2 > div:nth-child(1), .contents2 > div:nth-child(4){
+        width: 66%;
+    }
+
     .photos {
         width: 100%;
     }
@@ -521,4 +549,9 @@ a.navi_toggle_changed_active:before{
     .hoverphoto {
         width: 49%;
     }
+
+    #contact p {
+        font-size: 40pt;
+    }
+
 }
