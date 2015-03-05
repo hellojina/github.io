@@ -54,7 +54,7 @@ $document.scroll(function () {
     //console.log("scrolltop : " + window.innerHeight + " == " + $document.scrollTop());
 
 
-    if ( $document.scrollTop() >= 1024 ) {
+    if ( $document.scrollTop() >= 690 ) {
         console.log(">>> change");
         $(".navi_toggle").removeClass("navi_toggle").addClass("navi_toggle_changed");
     } else {
