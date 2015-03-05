@@ -1,4 +1,4 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
     $(".scroll").click(function (event) {
         event.preventDefault();
         $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
@@ -91,9 +91,19 @@ $(window).resize(function () {
 
 $(".click_img").click(function (event) {
     //$(".popup_content").attr("src", "portfolio_contents/" + $(this).attr('data-name') + ".html");
-    var filename = "portfolio_contents/" + $(this).attr('data-name') + ".html",
+	var name = $(this).attr('data-name');
+    var filename = "portfolio_contents/" + name + ".html",
         element = $('.popup').load(filename);
     $(".popup").fadeIn();
+	$(".popup").attr("data-name",name);
+});
+
+$('.popup .next').clcik(function(e){
+	var item = $('.popup').attr('data-name');
+	var item2 = $('.click_img[data-name='+item+']').next().attr('data-name');
+	var filename = "portfolio_contents/" + item2 + ".html";
+	$('.popup').load(filename);
+
 });
 
 
