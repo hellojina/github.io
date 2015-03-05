@@ -98,7 +98,7 @@ $(".click_img").click(function (event) {
 	$(".popup").attr("data-name",name);
 });
 
-$('.popup .next').clcik(function(e){
+$('.popup .next').click(function(e){
 	var item = $('.popup').attr('data-name');
 	var item2 = $('.click_img[data-name='+item+']').next().attr('data-name');
 	var filename = "portfolio_contents/" + item2 + ".html";
