@@ -510,24 +510,80 @@ a.navi_toggle_changed_active:before{
         text-align:center;
     }
 
-    .title {
-        width: 166px;
-        margin-left:auto;
+    .title, .subtitle {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    #about {
+        height: 900px;
+    }
+
+    .about_text {
+        margin-top: 50px;
+    }
+
+    .about_text > img {
+        width: 400px;
+    }
+
+    #about p {
+        font-size: 50px;
+    }
+
+    #about span {
+        font-size: 16pt;
+        line-height: 155%;
+    }
+
+    .travel {
+        display: block;
+        height: 4000px;
+    }
+
+    .contents1, .contents2 {
+        width: 100%;
+
+    }
+
+    .contents1 > div, .contents2 > div {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .hoverimg {
+        width: 100%;
+    }
+
+    .photos {
+        width: 100%;
     }
 
     .hoverphoto{
-        width: 95%;
-        margin: 2px 15px 2px 15px;
+        width: 100%;
+        margin: 2px auto;
     }
+
+    .contact {
+        display: block;
+    }
+    #contact p {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+
+
 
 }
 
-@media (max-width: 1419px) {
+@media (min-width: 721px) and (max-width: 1419px) {
 
     .title, .subtitle {
         margin-left: 50px;
     }
-
 
     .contents1, .contents2 {
         width: 100%;
