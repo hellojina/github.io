@@ -122,7 +122,7 @@ $('.btn.about').click(function() {
     $('html,body').animate({scrollTop: top}, 200);
 });
 
-$('.btn.travel').click(function() {
+$('.btn.travel_navi').click(function() {
     var top = $('#travel').offset().top;
     $('html,body').animate({scrollTop: top}, 200);
 });
