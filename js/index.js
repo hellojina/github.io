@@ -100,8 +100,11 @@ $(".click_img").click(function (event) {
 
 $('.popup .next').click(function(e){
 	var item = $('.popup').attr('data-name');
+	console.log(item);
 	var item2 = $('.click_img[data-name='+item+']').next().attr('data-name');
+	console.log(item2);
 	var filename = "portfolio_contents/" + item2 + ".html";
+	console.log(filename);
 	$('.popup').load(filename);
 
 });
