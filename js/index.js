@@ -77,9 +77,10 @@ $document.scroll(function () {
 
 (function() {
     var mainTitle = $('.main_title');
+    var main = $('#main');
 
     $(document).scroll(function(e) {
-        var percent = $(document).scrollTop() / $(window).height();
+        var percent = $(document).scrollTop() / mainTitle.height();
         percent = percent > 1 ? 1 : percent;
         mainTitle.css('opacity', 1 - percent);
     });
