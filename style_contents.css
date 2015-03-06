@@ -1,0 +1,19 @@
+.background_cover {
+    background-size: cover;
+}
+
+.content1_1  {
+    background-image: url("images/img_12.png");
+}
+.content1_2 {
+    background-image: url("images/img_13.gif");
+}
+.content1_3 {
+    background-image: url("images/img_14.png");
+}
+.content1_4 {
+    background-image: url("images/img_15.png");
+}
+.content1_5 {
+    background-image: url("images/img_16.png");
+}
