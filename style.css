@@ -235,6 +235,7 @@ a.navi_toggle_changed_active:before{
 
 .content-img {
     height: 100%;
+    width: 100%;
 }
 
 .hoverimg {
@@ -405,6 +406,10 @@ a.navi_toggle_changed_active:before{
     text-align: center;
 }
 
+.contact_way .way_sns {
+    display: inline-block;
+}
+
 .email {
     width: 490px;
     height: 103px;
@@ -519,8 +524,6 @@ a.navi_toggle_changed_active:before{
 
 }
 
-
-
 .popup_container {
     width:100%;
     height:100%;
@@ -598,10 +601,7 @@ a.navi_toggle_changed_active:before{
         margin-top: 50px;
     }
 
-
-
-
-}
+  }
 
 @media (min-width: 721px) and (max-width: 1419px) {
 
@@ -611,6 +611,11 @@ a.navi_toggle_changed_active:before{
 
     .contents1, .contents2 {
         width: 100%;
+    }
+
+    .contents1 > div, .contents2 > div {
+        width: 33%;
+        background: center;
     }
 
     .hoverimg {
@@ -627,11 +632,10 @@ a.navi_toggle_changed_active:before{
     }
 
     .hoverphoto {
-        width: 49%;
+        width: 49.5%;
     }
 
     #contact p {
         font-size: 40pt;
     }
-
 }
