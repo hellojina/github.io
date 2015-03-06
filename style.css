@@ -270,6 +270,7 @@ a.navi_toggle_changed_active:before{
     background-color: rgba(248, 108, 89, 0.95);
     opacity: 0;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .hoverimg:hover .pf_text {
