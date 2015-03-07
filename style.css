@@ -501,19 +501,29 @@ a.navi_toggle_changed_active:before{
 .popup_top {
     margin-bottom: 20px;
     text-align: center;
+    background-color: #ffffff;
+    height: 280px;
 }
+
+.popup_top_img {
+    background-image: url('images/detail_bg.png');
+    background-size: cover;
+    height: 80%;
+}
+
+
 
 .popup_title {
     color: #333;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -0.03em;
     font-size: 46px;
-    margin-top: 90px;
+    padding-top: 90px;
 }
 
 .popup_subtitle {
-    color: #555;
-    font-size: 20px;
+    color: #888;
+    font-size: 18px;
     margin-top: 12px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -551,6 +561,7 @@ a.navi_toggle_changed_active:before{
 .popup_content02 {
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .popup_content02 img {
