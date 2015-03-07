@@ -506,7 +506,6 @@ a.navi_toggle_changed_active:before{
 }
 
 .popup_top_img {
-    background-image: url('images/detail_bg.png');
     background-size: cover;
     height: 80%;
 }
