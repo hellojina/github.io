@@ -368,11 +368,11 @@ a.navi_toggle_changed_active:before{
 .hoverphoto {
     position: relative;
 /*    width: 705px;*/
-    width: 50%;
+    width: 49%;
     border: 0 solid;
     border-radius: 2px;
     height: 480px;
-/*    margin: 2px;*/
+    margin: 2px;
     float: left;
     background-repeat: no-repeat;
     background-size: cover;
