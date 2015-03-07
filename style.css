@@ -556,7 +556,9 @@ a.navi_toggle_changed_active:before{
 .popup_content02 img {
     text-align: center;
     margin: 0;
-
+}
+.popup_content02_full_img {
+    width : 100%;
 }
 
 .popup_container {
