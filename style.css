@@ -343,18 +343,20 @@ a.navi_toggle_changed_active:before{
 
 .photos {
     margin: 0 auto;
-    width: 1419px;
+/*    width: 1419px;*/
+    width: 100%;
     max-width: 1419px;
     padding-top: 30px;
 }
 
 .hoverphoto {
     position: relative;
-    width: 705px;
+/*    width: 705px;*/
+    width: 50%;
     border: 0 solid;
     border-radius: 2px;
     height: 480px;
-    margin: 2px;
+/*    margin: 2px;*/
     float: left;
     background-repeat: no-repeat;
     background-size: cover;
