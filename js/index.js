@@ -134,7 +134,7 @@ var hidePopup = function () {
 };
 
 $('.btn.home').click(function() {
-    $('html,body').animate({scrollTop: 0}, 200);
+    $('html,body').animaate({scrollTop: 0}, 200);
 });
 
 $('.btn.portfolio').click(function() {
