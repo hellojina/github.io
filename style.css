@@ -613,7 +613,9 @@ a.navi_toggle_changed_active:before{
     .contents1 > div, .contents2 > div {
         width: 100%;
         background-size: cover;
+        height: 100%;
     }
+
     
     .contents1 > div:nth-child(2), .contents1 > div:nth-child(6),
     .contents2 > div:nth-child(1), .contents2 > div:nth-child(4){
@@ -631,6 +633,10 @@ a.navi_toggle_changed_active:before{
     .hoverphoto{
         width: 100%;
         margin: 2px auto;
+    }
+    
+    .portfolio {
+        width: 100%;
     }
 
     .contact {
