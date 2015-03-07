@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    $.stellar();
     $(".scroll").click(function (event) {
         event.preventDefault();
         $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
@@ -73,6 +74,17 @@ $document.scroll(function () {
             $(".about_availability").fadeOut(300);
     }
 });
+
+(function() {
+    var mainTitle = $('.main_title');
+    var main = $('#main');
+
+    $(document).scroll(function(e) {
+        var percent = $(document).scrollTop() / mainTitle.height();
+        percent = percent > 1 ? 1 : percent;
+        mainTitle.css('opacity', 1 - percent);
+    });
+}());
 
 $(window).resize(function () {
     if ($document.scrollTop() >= (windowHeight * 0.8)) {
