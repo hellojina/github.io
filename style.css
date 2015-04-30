@@ -451,6 +451,7 @@ a.navi_toggle_changed_active:before{
 .email:hover {
     width: 490px;
     height: 103px;
+    display: inline-block;
     background-image: url('images/img_53.png');
     }
 
@@ -464,6 +465,7 @@ a.navi_toggle_changed_active:before{
 .facebook:hover {
     width: 103px;
     height: 103px;
+    display: inline-block;
     background-image: url('images/img_55.png');
 }
 
@@ -477,6 +479,7 @@ a.navi_toggle_changed_active:before{
 .linkedin:hover {
     width: 103px;
     height: 103px;
+    display: inline-block;
     background-image: url('images/img_57.png');
 }
 
