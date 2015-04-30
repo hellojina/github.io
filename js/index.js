@@ -134,11 +134,11 @@ var hidePopup = function () {
 };
 
 $('.btn.home').click(function() {
-    $('html,body').animaate({scrollTop: 0}, 200);
+    $('html,body').animaate({scrollTop: 0}, 0);
 });
 
-$('.btn.portfolio').click(function() {
-   var top = $('#portfolio').offset().top;
+$('.btn.portfolio_navi').click(function() {
+    var top = $('#portfolio').offset().top;
     $('html,body').animate({scrollTop: top}, 200);
 });
 

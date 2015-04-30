@@ -680,7 +680,7 @@ a.navi_toggle_changed_active:before{
 @media (min-width: 721px) and (max-width: 1419px) {
 
     .main_title {
-        top: 10%;
+        top: 20%;
     }
 
 /*
