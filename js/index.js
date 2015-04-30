@@ -133,8 +133,8 @@ var hidePopup = function () {
     $(".popup").fadeOut();
 };
 
-$('.btn.home').click(function() {
-    $('html,body').animaate({scrollTop: 0}, 0);
+$('.btn.main_home').click(function() {
+    $('html,body').animaate({scrollTop: 0}, 200);
 });
 
 $('.btn.portfolio_navi').click(function() {
