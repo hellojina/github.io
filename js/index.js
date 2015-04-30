@@ -54,15 +54,6 @@ var $document = $(document),
 $document.scroll(function () {
     //console.log("scrolltop : " + window.innerHeight + " == " + $document.scrollTop());
 
-
-    if ( $document.scrollTop() >= 690 ) {
-        console.log(">>> change");
-        $(".navi_toggle").removeClass("navi_toggle").addClass("navi_toggle_changed");
-    } else {
-        $(".navi_toggle_changed").removeClass("navi_toggle_changed").addClass("navi_toggle");
-    }
-
-
     if ($document.scrollTop() >= (windowHeight * 0.8)) {
         // user scrolled 50 pixels or more;
         // do stuff
@@ -77,12 +68,22 @@ $document.scroll(function () {
 
 (function() {
     var mainTitle = $('.main_title');
-    var main = $('#main');
+    var home = $('#home');
+    var naviToggle = $('#navi_toggle');
+    var naviTooggleTop = naviToggle.offset().top - $(document).scrollTop();
 
     $(document).scroll(function(e) {
         var percent = $(document).scrollTop() / mainTitle.height();
         percent = percent > 1 ? 1 : percent;
         mainTitle.css('opacity', 1 - percent);
+        
+        // 햄버거 메뉴 색상 토글        
+        if ($(document).scrollTop() > home.outerHeight() - naviTooggleTop) {
+            $(".navi_toggle").removeClass("navi_toggle").addClass("navi_toggle_changed");
+        } else {
+            $(".navi_toggle_changed").removeClass("navi_toggle_changed").addClass("navi_toggle");
+        }
+
     });
 }());
 
