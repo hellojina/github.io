@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: 'Heebo', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -108,10 +109,6 @@ body {
 
 /* index */
 
-body {
-    font-family: 'Heebo', sans-serif;
-}
-
 .top ul {
     text-decoration: none;
     font-weight: 700;
@@ -122,19 +119,6 @@ body {
     line-height: 1.2;
 }
 
-
-.menu:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.menu {
-    margin-top: 100px;
-    margin-bottom: 135px;
-    margin-left: 0;
-    line-height: 0;
-}
 
 .menu ul {
     padding: 0;
@@ -407,24 +391,30 @@ body {
         margin-bottom: 0px;
     }
     
+    .menu {
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    
+    
     .box {
-        padding-top: 50px;
-        padding-left: 44px;
+        padding-top: 42px;
+        padding-left: 34px;
         padding-right: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     
     .box h {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 700;
         margin-bottom: 20px;
     }
 
     .box ul {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 300;
-        line-height: 1.3;
+        line-height: 1.4;
         margin-top: 20px;
     }
     
