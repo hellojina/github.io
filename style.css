@@ -52,8 +52,12 @@ table {
 
 /* common */
 
-body {
+html * {
     font-family: 'Heebo', sans-serif;
+}
+
+body {
+    
 }
 
 #container_img {
