@@ -108,7 +108,9 @@ body {
     padding: 0;
 } 
 
-
+.margin0{
+    margin: 0;
+}
 
 
 /* index */
@@ -343,31 +345,6 @@ body {
     font-weight: 700
 }
 
-#ssup_emoji {
-    position: relative;
-    width: 100%;
-    padding-bottom: 85%;
-}
-
-#ssup_emoji01 {
-    position: absolute;
-    z-index: 1000;
-    top: 200px;
-}
-
-#ssup_emoji02 {
-    position: absolute;
-    display: block; 
-    clear: both;
-    z-index: 1;
-}
-
-#ssup_emoji03 {
-    position: absolute;
-    z-index: 1000;
-    bottom: 130px;
-    }
-
 
 .ssup_branding img {
     margin: 0;
@@ -391,7 +368,7 @@ body {
         margin-bottom: 0;
     }
     
-    .container {
+    .card {
         margin-bottom: 0px;
     }
     
@@ -426,7 +403,7 @@ body {
     /* detail */
     
     .info01 {
-        font-size: 50px;
+        font-size: 40px;
     }
     
     
@@ -445,6 +422,10 @@ body {
         padding-top: 30px;
     }
 
+    .ssup_structure_img {
+        width: 80%;
+    }
+    
     .ssup_sticker01 {
         margin-top: 30px;
     }
@@ -471,6 +452,20 @@ body {
     .ssup_branding p {
         margin-top: 30px;
     }
+    
+    .margin320 {
+        margin-top: 30px;
+    }
+    
+    #ssup_emoji01 {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    #ssup_emoji02 {
+        
+    }
+
 }
 
 
@@ -482,7 +477,7 @@ body {
         font-size: 90px;
     }
     
-    .container {
+    .card {
         margin-bottom: 30px;
     }
 
@@ -523,6 +518,9 @@ body {
         width: 100%;
     }
 
+    .ssup_structure_img {
+        width: 60%;
+    }
     
     .ssup_target_img {
         padding-top: 50px;
@@ -555,6 +553,33 @@ body {
     .ssup_branding p {
         margin-top: 30px;
     }
+    
+    #ssup_emoji {
+        position: relative;
+        width: 100%;
+        padding-bottom: 85%;
+    }
+
+    
+    #ssup_emoji01 {
+        position: absolute;
+        z-index: 1000;
+        top: 200px;
+    }
+
+    #ssup_emoji02 {
+        position: absolute;
+        display: block; 
+        clear: both;
+        z-index: 1;
+    }
+
+    #ssup_emoji03 {
+        position: absolute;
+        z-index: 1000;
+        bottom: 130px;
+    }
+
 }
 
  /* between 992-1200 */ /* between 992-1200 */ /* between 992-1200 */ /* between 992-1200 */ /* between 992-1200 */ /* between 992-1200 */ /* between 992-1200 */
@@ -565,7 +590,7 @@ body {
         font-size: 100px;
     }
     
-    .container {
+    .card {
         margin-bottom: 30px;
     }
     
@@ -598,6 +623,10 @@ body {
     .top_img {
         margin-top: 0;
         width: 100%;
+    }
+    
+    .ssup_structure_img {
+        width: 50%;
     }
     
    .ssup_target_img {
@@ -644,13 +673,40 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    #ssup_emoji {
+        position: relative;
+        width: 100%;
+        padding-bottom: 85%;
+    }
+
+    
+    #ssup_emoji01 {
+        position: absolute;
+        z-index: 1000;
+        top: 200px;
+    }
+
+    #ssup_emoji02 {
+        position: absolute;
+        display: block; 
+        clear: both;
+        z-index: 1;
+    }
+
+    #ssup_emoji03 {
+        position: absolute;
+        z-index: 1000;
+        bottom: 130px;
+    }
+
 }
 
  /* over 1200 */ /* over 1200 */ /* over 1200 */ /* over 1200 */ /* over 1200 */ /* over 1200 */ /* over 1200 */ /* over 1200 */ /* over 1200 */ /* over 1200 */
 
 @media screen and (min-width: 1200px) {
     
-    .container {
+    .card {
         margin-bottom: 30px;
     }
     
@@ -680,6 +736,10 @@ body {
     .top_img {
         margin-top: 30px;
         width: 90%;
+    }
+    
+    .ssup_structure_img {
+        width: 60%;
     }
     
     .ssup_sticker01 {
@@ -712,6 +772,33 @@ body {
     .ssup_target_img {
         padding-top: 100px;
     }
+    
+    #ssup_emoji {
+        position: relative;
+        width: 100%;
+        padding-bottom: 85%;
+    } 
+
+    
+    #ssup_emoji01 {
+    position: absolute;
+    z-index: 1000;
+    top: 200px;
+    }
+
+    #ssup_emoji02 {
+        position: absolute;
+        display: block; 
+        clear: both;
+        z-index: 1;
+    }
+
+    #ssup_emoji03 {
+        position: absolute;
+        z-index: 1000;
+        bottom: 130px;
+        }
+
     
     .ssup_write02 {
         width: 50%;
