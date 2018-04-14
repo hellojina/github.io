@@ -51,6 +51,10 @@ table {
 
 /* common */
 
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
 #container_img {
     display: block;
     margin-left: auto;
@@ -404,8 +408,12 @@ body {
     }
     
     .box {
+        padding-top: 50px;
+        padding-left: 44px;
+        padding-right: 40px;
         margin-bottom: 30px;
     }
+
     
     .box h {
         font-size: 2rem;
