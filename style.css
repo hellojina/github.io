@@ -306,18 +306,6 @@ body {
 
 /* description */
 
-.des {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #F7F8F9;
-}
-
-#ssup_des {
-    background-image: url('./img/ssup/ssup_img01.png');
-    background-size: 100%;
-    background-position: left;
-    background-repeat: no-repeat;
-}
 
 .ssup_problem p {
     margin-top: 30px;
@@ -449,6 +437,15 @@ body {
         font-size: 36px;
     }
     
+    .des {
+        background-color: #F7F8F9;
+        padding-bottom: 80px;
+    }
+    
+    .des01 {
+        width: 160%;
+        margin-top: 30px;
+    }
     
     .info01 {
         font-size: 40px;
@@ -557,6 +554,18 @@ body {
     
 /* detail */
     
+
+    .des {
+        background-color: #F7F8F9;
+        padding-bottom: 80px;
+    }
+    
+    .des01 {
+        width: 130%;
+        margin-top: 30px;
+    }
+    
+    
     .info01 {
         font-size: 55px;
     }
@@ -661,6 +670,27 @@ body {
 
 /* detail */
     
+
+    .des {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 85%;
+        background-color: #F7F8F9;
+    } 
+
+    .des01 {
+        position: absolute;
+        top: 20%;
+    }
+    
+    .des02 {
+        position: absolute;
+        z-index: 1000;
+        top: 13%;
+        background-color: #F7F8F9;
+    }
+    
     .detail_title, .detail_title02 {
         font-size: 42px;
     }
@@ -721,7 +751,7 @@ body {
         margin-top: 60px;
     }
     
-     .ssup_write02 {
+    .ssup_write02 {
         width: 60%;
         display: block;
         margin-left: auto;
@@ -788,6 +818,7 @@ body {
     
     
     /* detail */
+
     
     .detail_title, .detail_title02 {
         font-size: 42px;
@@ -801,6 +832,31 @@ body {
         margin-top: 30px;
         width: 90%;
     }
+    
+    .des {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 65%;
+        background-color: #F7F8F9;
+    } 
+    
+    .des container {
+        margin-bottom: 80px;
+    }
+
+    .des01 {
+        position: absolute;
+        top: 15%;
+    }
+    
+    .des02 {
+        position: absolute;
+        z-index: 1000;
+        top: 13%;
+    }
+    
+
     
     .ssup_structure_img {
         width: 60%;
@@ -842,7 +898,6 @@ body {
         width: 100%;
         padding-bottom: 85%;
     } 
-
     
     .ssup_emoji01 {
         position: absolute;
