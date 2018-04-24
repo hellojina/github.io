@@ -307,13 +307,6 @@ body {
 
 /* detail */
 
-.ssup {
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 2;
-    text-decoration: none;
-}
-
 .detail_title {
     color: '#464954';
     text-decoration: underline;
