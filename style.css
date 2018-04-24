@@ -234,11 +234,11 @@ body {
 */
 
 .box:hover {
-    transform: scale(.95);
+    transform: scale(.96);
 }
 
-
 /*
+
 .box:hover .box_bg {
     opacity: 0;
     transition: .1s ease;
